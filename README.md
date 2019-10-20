@@ -45,61 +45,61 @@ Compiled from the [reference card](http://www.yaml.org/refcard.html).
 
 ## Characters' roles 
 
-### space
+### :arrow_right: space
 
 (details unknown)
 
-### <a name="bang">!</a>
+### :arrow_right: <a name="bang">!</a>
 
 tag
 
-### <a name="quot">"</a>
+### :arrow_right: <a name="quot">"</a>
 
 string, with escapes
 
-### <a name="hash">\#</a> #
+### :arrow_right: <a name="hash">\#</a> #
 
 comment
 
-### <a name="dollar">$</a>
+### :arrow_right: <a name="dollar">$</a>
 
 nothing special?
 
-### <a name="percent">%</a>
+### :arrow_right: <a name="percent">%</a>
 
 directive
 
-### <a name="amp">&amp;</a>
+### :arrow_right: <a name="amp">&amp;</a>
 
 anchor
 
-### <a name="apos">'</a>
+### :arrow_right: <a name="apos">'</a>
 
 string, without escapes
 
-### <a name="lparen">(</a>
+### :arrow_right: <a name="lparen">(</a>
 
 nothing special?
 
-### <a name="rparen">)</a>
+### :arrow_right: <a name="rparen">)</a>
 
 nothing special?
 
-### <a name="asterisk">*</a>
+### :arrow_right: <a name="asterisk">*</a>
 
 alias (anchor dereference?)
 
-### <a name="plus">+</a>
+### :arrow_right: <a name="plus">+</a>
 
 Keep chomp modifier ('|+' or '>+').
 
 See [|](#pipe) and [&gt;](#gt)
 
-### <a name="comma">,</a>
+### :arrow_right: <a name="comma">,</a>
 
 ', ' : Separate in-line branch entries.
 
-### <a name="dash">-</a>
+### :arrow_right: <a name="dash">-</a>
 
 '- ' : Nested series entry indicator.
 
@@ -109,89 +109,89 @@ See [|](#pipe) and [&gt;](#gt)
 
 '---': Document header.
 
-### <a name="dot">.</a>
+### :arrow_right: <a name="dot">.</a>
 
 '...': Document terminator.
 
 numbers: decimal
 
-### <a name="slash">/</a>
+### :arrow_right: <a name="slash">/</a>
 
 nothing special?
 
-### <a name="digit">0123456789</a>
+### :arrow_right: <a name="digit">0123456789</a>
 
 1-9  : Explicit indentation modifier ('|1' or '>2').
 
 See [|](#pipe) and [&gt;](#gt)
 
-### <a name="colon">:</a>
+### :arrow_right: <a name="colon">:</a>
 
 ': ' : Value indicator.
 
-### <a name="semicolon">;</a>
+### :arrow_right: <a name="semicolon">;</a>
 
 nothing special?
 
-### <a name="lt">&lt;</a>
+### :arrow_right: <a name="lt">&lt;</a>
 
 '<<' : Merge keys from another mapping.
 
-### <a name="equal">=</a>
+### :arrow_right: <a name="equal">=</a>
 
 '='  : Default "value" mapping key.
 
-### <a name="gt">&gt;</a>
+### :arrow_right: <a name="gt">&gt;</a>
 
 '>'  : Folded scalar indicator.
 
-### <a name="question">?</a>
+### :arrow_right: <a name="question">?</a>
 
 '? ' : Key indicator.
 
-### <a name="at">@</a>
+### :arrow_right: <a name="at">@</a>
 
 reserved for future use (as of ver 1.1?)
 
-### <a name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</a>
+### :arrow_right: <a name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</a>
 
 lots of fun words...
 
-### <a name="lbracket">[</a>
+### :arrow_right: <a name="lbracket">[</a>
 
 '[]' : Surround in-line series branch.
 
-### <a name="backslash">\\</a>
+### :arrow_right: <a name="backslash">\\</a>
 
 escapes in "double quoted" strings
 
-### <a name="rbracket">]</a>
+### :arrow_right: <a name="rbracket">]</a>
 
 '[]' : Surround in-line series branch.
 
-### <a name="caret">^</a>
+### :arrow_right: <a name="caret">^</a>
 
 nothing special?
 
-### <a name="underscore">_</a>
+### :arrow_right: <a name="underscore">_</a>
 
 1_230.15 Fixed float
 
 "\_": NBSP
 
-### <a name="backquote">`</a>
+### :arrow_right: <a name="backquote">`</a>
 
 reserved for future use (as of ver 1.1?)
 
-### <a name="lowercase">abcdefghijklmnopqrstuvwxyz</a>
+### :arrow_right: <a name="lowercase">abcdefghijklmnopqrstuvwxyz</a>
 
 see ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-### <a name="lbrace">{</a>
+### :arrow_right: <a name="lbrace">{</a>
 
 '{}' : Surround in-line keyed branch.
 
-### <a name="pipe">|</a>
+### :arrow_right: <a name="pipe">|</a>
 
 '|'  : Block scalar indicator.
 
@@ -201,10 +201,10 @@ see ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 '|-' : strip final line break and trailing empty lines
 
-### <a name="rbrace">}</a>
+### :arrow_right: <a name="rbrace">}</a>
 
 '{}' : Surround in-line keyed branch.
 
-### <a name="tilde">~</a>
+### :arrow_right: <a name="tilde">~</a>
 
 ~, null : Null (no value).
