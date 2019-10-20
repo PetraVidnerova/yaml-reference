@@ -45,63 +45,38 @@ Compiled from the [reference card](http://www.yaml.org/refcard.html).
 
 ## Characters' roles 
 
-### space
+Character    | Role 
+------------ | -------------
 
-(details unknown)
+ <a name="space">space</a> | (details unknown)
 
-### <a name="bang">!</a>
+ <a name="bang">!</a> | tag
 
-tag
+ <a name="quot">"</a> | string, with escapes
 
-### <a name="quot">"</a>
+ <a name="hash">\#</a> | comment
 
-string, with escapes
+ <a name="dollar">$</a> | nothing special?
 
-### <a name="hash">\#</a> #
+ <a name="percent">%</a> | directive
 
-comment
+ <a name="amp">&amp;</a> | anchor
 
-### <a name="dollar">$</a>
+ <a name="apos">'</a> | string, without escapes
 
-nothing special?
+ <a name="lparen">(</a> | nothing special?
 
-### <a name="percent">%</a>
+ <a name="rparen">)</a> | nothing special?
 
-directive
+ <a name="asterisk">*</a> | alias (anchor dereference?)
 
-### <a name="amp">&amp;</a>
-
-anchor
-
-### <a name="apos">'</a>
-
-string, without escapes
-
-### <a name="lparen">(</a>
-
-nothing special?
-
-### <a name="rparen">)</a>
-
-nothing special?
-
-### <a name="asterisk">*</a>
-
-alias (anchor dereference?)
-
-### <a name="plus">+</a>
-
-Keep chomp modifier ('|+' or '>+').
+ <a name="plus">+</a> | Keep chomp modifier ('|+' or '>+').
 
 See [|](#pipe) and [&gt;](#gt)
 
-### <a name="comma">,</a>
+ <a name="comma">,</a> | ', ' : Separate in-line branch entries.
 
-', ' : Separate in-line branch entries.
-
-### <a name="dash">-</a>
-
-'- ' : Nested series entry indicator.
+ <a name="dash">-</a> | '- ' : Nested series entry indicator.
 
 '-'  : Strip chomp modifier ('|-' or '>-').
 
@@ -109,91 +84,51 @@ See [|](#pipe) and [&gt;](#gt)
 
 '---': Document header.
 
-### <a name="dot">.</a>
-
-'...': Document terminator.
+ <a name="dot">.</a> | '...': Document terminator.
 
 numbers: decimal
 
-### <a name="slash">/</a>
+ <a name="slash">/</a> | nothing special?
 
-nothing special?
-
-### <a name="digit">0123456789</a>
-
-1-9  : Explicit indentation modifier ('|1' or '>2').
+ <a name="digit">0123456789</a> | 1-9  : Explicit indentation modifier ('|1' or '>2').
 
 See [|](#pipe) and [&gt;](#gt)
 
-### <a name="colon">:</a>
+ <a name="colon">:</a> | ': ' : Value indicator.
 
-': ' : Value indicator.
+ <a name="semicolon">;</a> | nothing special?
 
-### <a name="semicolon">;</a>
+ <a name="lt">&lt;</a> | '<<' : Merge keys from another mapping.
 
-nothing special?
+ <a name="equal">=</a> | '='  : Default "value" mapping key.
 
-### <a name="lt">&lt;</a>
+ <a name="gt">&gt;</a> | '>'  : Folded scalar indicator.
 
-'<<' : Merge keys from another mapping.
+ <a name="question">?</a> | '? ' : Key indicator.
 
-### <a name="equal">=</a>
+ <a name="at">@</a> | reserved for future use (as of ver 1.1?)
 
-'='  : Default "value" mapping key.
+ <a name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</a> | lots of fun words...
 
-### <a name="gt">&gt;</a>
+ <a name="lbracket">[</a> | '[]' : Surround in-line series branch.
 
-'>'  : Folded scalar indicator.
+ <a name="backslash">\\</a> | escapes in "double quoted" strings
 
-### <a name="question">?</a>
+ <a name="rbracket">]</a> | '[]' : Surround in-line series branch.
 
-'? ' : Key indicator.
+ <a name="caret">^</a> | nothing special?
 
-### <a name="at">@</a>
-
-reserved for future use (as of ver 1.1?)
-
-### <a name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</a>
-
-lots of fun words...
-
-### <a name="lbracket">[</a>
-
-'[]' : Surround in-line series branch.
-
-### <a name="backslash">\\</a>
-
-escapes in "double quoted" strings
-
-### <a name="rbracket">]</a>
-
-'[]' : Surround in-line series branch.
-
-### <a name="caret">^</a>
-
-nothing special?
-
-### <a name="underscore">_</a>
-
-1_230.15 Fixed float
+ <a name="underscore">_</a> | 1_230.15 Fixed float
 
 "\_": NBSP
 
-### <a name="backquote">`</a>
+ <a name="backquote">`</a> | reserved for future use (as of ver 1.1?)
 
-reserved for future use (as of ver 1.1?)
+ <a name="lowercase">abcdefghijklmnopqrstuvwxyz</a> | see ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-### <a name="lowercase">abcdefghijklmnopqrstuvwxyz</a>
+ <a name="lbrace">{</a> | '{}' : Surround in-line keyed branch.
 
-see ABCDEFGHIJKLMNOPQRSTUVWXYZ
-
-### <a name="lbrace">{</a>
-
-'{}' : Surround in-line keyed branch.
-
-### <a name="pipe">|</a>
-
-'|'  : Block scalar indicator.
+ <a name="pipe">|</a> | '|'  : Block scalar indicator.
 
 - Strip leading indentation.
 - Keep final line break but clip any trailing empty lines.
@@ -201,10 +136,6 @@ see ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 '|-' : strip final line break and trailing empty lines
 
-### <a name="rbrace">}</a>
+ <a name="rbrace">}</a> | '{}' : Surround in-line keyed branch.
 
-'{}' : Surround in-line keyed branch.
-
-### <a name="tilde">~</a>
-
-~, null : Null (no value).
+ <a name="tilde">~</a> | ~, null : Null (no value).
